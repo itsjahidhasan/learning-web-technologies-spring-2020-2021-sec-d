@@ -17,12 +17,12 @@ $arr=["1st","2nd" ,"3th"];
            echo " ";
          }
      }
- echo "\n";
+ echo "<br>";
 }
 
  
 
-echo "\n";
+echo "<br>";
 
  
 
@@ -35,26 +35,25 @@ for($i=0; $i<5; $i++)
   {  
     echo $number[$j];  
     }  
- echo "\n";
+ echo "<br>";
 }  
 
 
-$my_arr[3][3] = array(array("A"," "," "),
-array("B","C"," "),
-array("D","E","F")
-);  
-for($a=0; $a<2;$a++)
+$alpha = range('A','Z');  
+for($i=0; $i<3; $i++)
 {   
-  for($b=0; $b<=2; $b++)
+  for($j=0; $j<=$i; $j++)
   {
-
-    echo $my_arr[$a][$b];
     
-      
-    }
-   echo "\n";
-   
-}  
+    echo $alpha[$i]; 
+     $alpha[$i]++; 
+
+    }  
+
+ 
+
+   echo "<br>";
+} 
 
  
 

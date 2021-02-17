@@ -6,15 +6,15 @@ $c = 3;
  
 
 if(($a > $b) && ($a > $c)) 
- echo "x = $x is the largest number";
+ echo "a = $a is the largest number";
 
  
 
 else if($b > $c) 
- echo "y = $y is the largest number";
+ echo "b = $b is the largest number";
 
  
 
 else
- echo "z = $z is the largest number";
+ echo "c = $c is the largest number";
 ?>
