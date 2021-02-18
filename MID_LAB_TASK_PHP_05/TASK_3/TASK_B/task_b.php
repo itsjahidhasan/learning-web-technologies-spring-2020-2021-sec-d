@@ -29,7 +29,7 @@
   <title>TASK_C|DOB Input</title>
 </head>
 <body>
-<form method="post" action=#>
+<form method="post" action="#">
 
 <fieldset>
     <legend><b>Date Of Birth</b></legend>
