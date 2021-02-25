@@ -21,8 +21,8 @@
         <tr>
           <td align="left"><img src="./img/logo.png" alt="" srcset=""></td>
           
-          <td ><span ><p>Logged in as<a href="#">Bob |</a></p>
-            <a href="#">Logout</a>
+          <td ><span ><p>Logged in as<a href="dashboard.html"><?php echo $userName ?>|</a></p>
+            <a href="login.html">Logout</a>
             </span></td>
         </tr>
       </table>
