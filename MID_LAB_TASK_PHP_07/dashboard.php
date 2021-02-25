@@ -1,3 +1,11 @@
+<?php
+
+    session_start();
+    $user = $_SESSION['currentUser'] ;
+    $userName = $user ['userName'];
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,17 +32,17 @@
     <h3>Account</h3>
     <hr>
     <ul>
-      <li><a href="">Dashboard</a></li>
-      <li><a href="">View Profile</a></li>
-      <li><a href="">Edit Profile</a></li>
-      <li><a href="">Change Profile Picture</a></li>
-      <li><a href="">Change Password</a></li>
-      <li><a href="">Logout</a></li>
+      <li><a href="dashboard.php">Dashboard</a></li>
+      <li><a href="viewProfile.html">View Profile</a></li>
+      <li><a href="editProfile.html">Edit Profile</a></li>
+      <li><a href="profilePicture.html">Change Profile Picture</a></li>
+      <li><a href="changePassword.html">Change Password</a></li>
+      <li><a href="login.html">Logout</a></li>
     </ul>
   </fieldset>
   
   <fieldset>
-    <h3>Welcome Bob</h3>
+    <h3>Welcome <?php echo $userName ?> </h3>
   </fieldset>
  
   <fieldset>
