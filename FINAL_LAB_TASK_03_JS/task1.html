@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment task1</title>
+</head>
+<body>
+  
+    
+      
+        <p>Name</p>
+      
+        <input type="text" name="name" id="name"> <br><br>
+        
+        <input type="submit" name="submit" value="Submit" onclick="getName()"><br>
+
+        <p id="validation"></p> 
+  <script>
+    function getName(){
+			const na = document.getElementById("name").value;
+      
+      var wordCount = document.getElementById("name").trim().split(/\s+/).length;
+
+      var letters = /^[A-Za-z]+$/;
+
+			if(na == ""){
+				document.getElementById('validation').innerHTML = "Cannot be empty";
+			}
+      else if(wordCount<2)
+      {
+        document.getElementById('validation').innerHTML = "Contains at least two words";
+      }
+      else if(na.value.match(letters)){
+        document.getElementById('validation').innerHTML = " Can contain a-z or A-Z";
+      }
+      else{
+        
+          document.getElementById('validation').innerHTML = "Matched";
+       
+				
+			}
+		}
+  </script>
+</body>
+</html>
